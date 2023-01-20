@@ -3,8 +3,8 @@ import UIKit
 
 extension UIColor {
     // For converting Hex-based colors
-    convenience init(hex: String) {
-        var hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+    convenience init(hexStr: String) {
+        var hexSanitized = hexStr.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
         var rgb: UInt64 = 0
         
